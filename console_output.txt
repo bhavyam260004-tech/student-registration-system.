@@ -1,0 +1,49 @@
+
+========== DATA INGESTION LOG ==========
+Total rows read     : 20
+Valid rows accepted : 13
+Rejected rows       : 7
+
+Reasons for rejected rows:
+  CSV row 5: Phone must start with 6, 7, 8, or 9
+  CSV row 6: Phone must contain exactly 10 digits
+  CSV row 7: Duplicate phone number
+  CSV row 8: Name is blank
+  CSV row 9: Email must contain exactly one @ symbol
+  CSV row 11: Email domain must contain a valid period
+  CSV row 16: Phone must start with 6, 7, 8, or 9
+
+Clean data saved to : students_clean.csv
+========================================
+
+
+=======================================================
+       STUDENT REGISTRATION - BUSINESS INTELLIGENCE
+=======================================================
+Total Contacts Processed : 20
+Valid Registrations      : 13
+Rejected Records         : 7
+Data Quality Accuracy    : 65.0%
+
+--- Rejection Reason Breakdown ---
+Phone must start with 6, 7, 8, or 9   : 2
+Phone must contain exactly 10 digits  : 1
+Duplicate phone number                : 1
+Name is blank                         : 1
+Email must contain exactly one @ symbol: 1
+Email domain must contain a valid period: 1
+
+--- Telecom Network Breakdown ---
+9-Series       : 4 students
+8-Series       : 4 students
+7-Series       : 3 students
+6-Series       : 2 students
+
+--- Top Email Domains ---
+@gmail.com                   : 5 students
+@outlook.com                 : 3 students
+@yahoo.com                   : 2 students
+@yahoo.co.in                 : 1 students
+@domain.com                  : 1 students
+@rediffmail.com              : 1 students
+=======================================================

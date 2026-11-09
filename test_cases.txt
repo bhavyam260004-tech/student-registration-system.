@@ -1,0 +1,55 @@
+STUDENT REGISTRATION SYSTEM - TEST CASES
+
+1. Valid record:
+   Name: Aarav Sharma
+   Phone: 9876543210
+   Email: aarav.sharma@gmail.com
+   Expected: Accepted
+
+2. Invalid phone length:
+   Phone: 12345
+   Expected: Rejected - phone must contain exactly 10 digits
+
+3. Invalid phone prefix:
+   Phone: 5551234567
+   Expected: Rejected - phone must start with 6, 7, 8, or 9
+
+4. Missing phone:
+   Phone: blank
+   Expected: Rejected - phone must contain exactly 10 digits
+
+5. Missing name:
+   Name: blank
+   Expected: Rejected - name is blank
+
+6. Invalid email with two @ symbols:
+   Email: student@@gmail.com
+   Expected: Rejected - email must contain exactly one @ symbol
+
+7. Invalid email domain:
+   Email: student@gmail
+   Expected: Rejected - email domain must contain a valid period
+
+8. Duplicate phone:
+   Use a phone number already in the student list.
+   Expected: Rejected - duplicate phone number
+
+9. Duplicate email:
+   Use an email already in the student list.
+   Expected: Rejected - duplicate email address
+
+10. Search:
+    Search by a student's name, phone number, and email.
+    Expected: Matching record is displayed.
+
+11. Update:
+    Enter a student ID and change one or more fields.
+    Expected: Updated record is saved to students_clean.csv.
+
+12. Delete:
+    Enter a student ID or phone number and confirm with y.
+    Expected: Record is removed and clean CSV is updated.
+
+13. Analytics:
+    Select menu option 6.
+    Expected: Acceptance rate, rejection reasons, phone prefixes, and email domains are displayed.
